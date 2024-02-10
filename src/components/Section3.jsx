@@ -11,6 +11,7 @@ import Upper from '../assets/img/upper-arrow.webp'
 import Down from '../assets/img/down-arrow.webp'
 import S3e from '../assets/img/S3-ellipse1.webp'
 import S3e2 from '../assets/img/S3-ellipse2.webp'
+import { Btngreen } from '../common/Icons'
 const Section3 = () => {
     return (
         <section className=' bg-2 bg-[#00141B] z-10 bg-size max-md:bg-white  max-sm:bg-cover relative '>
@@ -128,15 +129,7 @@ const Section3 = () => {
                 </div>
                <div className="flex justify-center pt-[40px] max-sm:pb-[70px]">
                <button className="py-[13px] px-[46px] duration-300 relative flex items-center justify-center bg-gradient-to-tl from-[#51C8EF] to-[#7AF57A]  rounded-[41px] hover:bg-gradient-to-br hover:shadow-[0px_4px_30px_-3px#67E0B2] hover:from-[#51C8EF] hover:to-[#7AF57A] font-[700] font-Inter text-[16px] text-[#00141B]"> <span className='absolute -bottom-2 -left-2'>
-                        <svg width="107" height="28" viewBox="0 0 107 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.5 1C1.5 15.3594 13.1406 27 27.5 27H105.5" stroke="url(#paint0_linear_1872_27)" strokewidth="1.5" strokelinecap="round" />
-                        <defs>
-                            <linearGradient id="paint0_linear_1872_27" x1="134.466" y1="25.6913" x2="113.531" y2="-37.3975" gradientUnits="userSpaceOnUse">
-                                <stop stopColor="#51C8EF" />
-                                <stop offset="1" stopColor="#7AF57A" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
+                    <Btngreen/>
                     </span>Mostrar más</button>
                </div>
                
