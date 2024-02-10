@@ -35,7 +35,7 @@ const Footer = () => {
                                     <li><a href="#" className=' font-Inter text-white text-[16px] leading-[25.5px] font-[500] opacity-[80%] '>Ofertas</a></li>
                                 </ul>
                             </div>
-                            <div className=" w-full sm:w-[50%] lg:w-[33.33%] md:px-3 mt-6 lg:mt-0">
+                            <div className=" w-full sm:w-[50%] lg:w-[33.33%] md:px-3 mt-6 lg:mt-0 flex flex-col flex-wrap">
                                 <h4 className=' font-Inter font-[700] leading-[25.6px] pt-[10px] pb-4 text-[16px] text-white'>Atención al cliente</h4>
                                 <ul className='flex flex-col gap-[14px]'>
                                     <li><a href="#" className=' font-Inter text-white text-[16px] leading-[25.5px] font-[500] opacity-[80%] '>¿Necesitas ayuda?</a></li>
@@ -47,7 +47,7 @@ const Footer = () => {
                             <h4 className=' font-Inter font-[700] leading-[25.6px] pt-[10px] pb-4 text-[16px] text-white'>Ponerse en contacto</h4>
                             <div className=" flex items-center gap-[10px]">
                                 <img src={Gmail} alt="gmail" />
-                                <p className=' font-Inter  text-white  text-[16px] leading-[25.5px] font-[500] opacity-[80%] '>juegosexclusivos@gmail.com</p>
+                                <p className=' font-Inter text-wrap  text-white  text-[16px] leading-[25.5px] font-[500] opacity-[80%] '>juegosexclusivos@gmail.com</p>
                             </div>
                             <div className=" flex items-center gap-[10px] pt-3">
                                 <img src={Calling} alt="calling" />

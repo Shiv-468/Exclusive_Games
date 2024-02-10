@@ -1,28 +1,40 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../assets/img/logo.webp'
 import { Btngreen, Btnwhite } from '../common/Icons'
+import { useTabs } from '@material-tailwind/react'
 // import hero from '../assets/img/hero-img.webp'
 const Header = () => {
+ const [data , setdata]=useState(false);
+ function view (){setdata(!data)
+if(data === false){
+    document.body.classList.add("overflow_hidden");
+}
+else{
+    document.body.classList.remove("overflow_hidden");
+}
+}
     return (
         <header className=' bg-black bg-img min-h-screen bg-no-repeat flex flex-col bg-center bg-cover'>
             <div className="bg-white bg-opacity-[10%]">
             <div className="contianer mx-auto max-w-[1140px] px-3">
                 <div className="flex py-[24px] justify-between items-center">
                     <img src={logo} alt="logo" />
-                    <ul className='flex items-center w-f justify -between z-[50] gap-[20px] max-xl:fixed  max-xl:bg-[#000] max-xl:w-full max-xl:h-full max-xl:top-0 max-xl:right-[-100%] max-xl:flex-col max-xl:justify-center'>
+                    <ul className={`${data ? "right-0":"right-[-100%]"} flex items-center w-f justify -between z-[50] gap-[20px] max-lg:fixed  max-lg:bg-[#00141B] max-lg:w-full max-lg:h-full max-xl:top-0  max-lg:flex-col max-lg:justify-center duration-500`}>
                         <li><a href="#" className='text-[16px] leading-[25.6px] font-[500] text-white'>Hogar</a></li>
                         <li><a href="#" className='text-[16px] leading-[25.6px] font-[500] text-white'>Misión</a></li>
                         <li><a href="#" className='text-[16px] leading-[25.6px] font-[500] text-white'>Tragamonedas</a></li>
                         <li><a href="#" className='text-[16px] leading-[25.6px] font-[500] text-white'>Por qué elegirnos</a></li>
                         <li><a href="#" className='text-[16px] leading-[25.6px] font-[500] text-white'>Ofertas</a></li>
                     </ul>
-                    <button className="py-[13px] font-[700] hidden  px-[46px] relative md:block sm:flex items-center justify-center bg-transparent rounded-[41px] border-[1px] font-Inter sm:text-[16px] text-[14px] text-white hover:bg-white hover:text-[#000] duration-300"> <span className='absolute -bottom-2 -left-2'>
+                <div className='flex items-center gap-[30px]'>
+                <button className="py-[13px] font-[700] hidden  px-[46px] relative md:block sm:flex items-center justify-center bg-transparent rounded-[41px] border-[1px] font-Inter sm:text-[16px] text-[14px] text-white hover:bg-white hover:text-[#000] duration-300"> <span className='absolute -bottom-2 -left-2'>
                           <Btnwhite/>
                         </span>Acceso</button>
-                        <div class="menuicon xl:hidden block z-50 ">
-                    <span class="bar h-[3px] block bg-white w-[25px] duration-300"></span>
-                    <span class="bar  h-[3px] block  bg-white w-[25px] my-[6px]"></span>
-                    <span class=" bar h-[3px] block  bg-white w-[25px]  duration-300"></span>
+                        <div onClick={view} className="menuicon lg:hidden block z-50 ">
+                    <span className="bar h-[3px] block bg-white w-[25px] duration-300"></span>
+                    <span className="bar h-[3px] block  bg-white w-[25px] my-[6px]"></span>
+                    <span className="bar h-[3px] block  bg-white w-[25px]  duration-300"></span>
+                </div>
                 </div>
                 </div>
 

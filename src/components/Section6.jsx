@@ -9,20 +9,16 @@ import A_of_diamond from '../assets/img/A_of_diamond.webp'
 import A_of_heart from '../assets/img/A_of_heart.webp'
 import Dice from '../assets/img/Dice.webp'
 import Green_tocken from '../assets/img/Green-tocken.webp'
-import S6E1 from '../assets/img/S6-ellipse-1.webp'
 import S6E2 from '../assets/img/S6-ellipse2.webp'
 import RollerElllip from '../assets/img/RollerEllip.webp'
 import S6E3 from '../assets/img/S6-ellipse3.webp'
 import Trip7E from '../assets/img/Trip7E.webp'
-import S6E4 from '../assets/img/S6-ellipse4.webp'
 import { Btngreen, Btnwhite, GreenTick } from '../common/Icons'
 const Section6 = () => {
   return (
-    <section className='bg-[#00141B] relative'>
-        <img src={S6E1} alt="s6-ellipse-1" className='absolute top-[-17%] left-0 z-0 hidden lg:block' />
+    <section className='bg-[#00141B] relative overflow-hidden'>
         <img src={S6E2} alt="s6-ellipse-2" className=' absolute right-0 z-0 top-0 hidden lg:block' />
         <img src={S6E3} alt="s6-ellipse-3" className=' absolute left-0 top-[58%] z-0 hidden lg:block' />
-        <img src={S6E4} alt="s6-ellipse-4" className=' absolute bottom-[-23%] right-0 hidden lg:block' />
         <div className="container mx-auto px-3 max-w-[1140px] z-10">
             <div className=" flex flex-wrap -mx-3 pt-[20px] md:pt-[100px] md:pb-[75px] items-center md:items-start">
                 <div className=" w-full md:w-[50%] px-3 flex justify-center z-10">
@@ -64,7 +60,7 @@ const Section6 = () => {
                 <p className='font-Inter font-[500] leading-[25.6px] text-[16px] text-white pt-4'>Te ofrecemos las mejores experiencias de juegos para tus clientes.</p>
             </div>
         </div>
-        <div className="container mx-auto max-w-[1140px] px-3 lg:px-0 relative z-10">
+        <div className="container mx-auto max-w-[1140px] px-3 xl:px-0 relative z-10">
         <img src={RollerElllip} alt="roller-ellip" className=' absolute z-0 top-[-4%] left-[-2%] hidden lg:block' />
             <div className=" sm:pt-[57px] sm:pr-[40px] pr-[20px] pb-[32px] pt-[25px] sm:pb-[32px] pl-[25px] sm:pl-[46px] bg-gradient-to-t from-[#072125] to-[#072125] border-[0.5px] border-[#828F93] rounded-[16px]">
             <div className="flex flex-wrap -mx-3">
@@ -100,7 +96,7 @@ const Section6 = () => {
             </div>
           
         </div>
-        <div className="container mx-auto max-w-[1140px] px-3 lg:px-0 ">
+        <div className="container mx-auto max-w-[1140px] px-3 xl:px-0 ">
             <div className=" border-[0.5px] border-[#828F93] rounded-[16px] bg-container py-[46px] bg-cover bg-no-repeat mt-[64px] mb-[64px] relative">
                 <img src={Green_tocken} alt="green-tocken"  className=' absolute top-[16%] left-[20%] hidden lg:block'/>
                 <img src={A_of_diamond} alt="A-of-diamond" className=' absolute top-[55%] left-[13%] hidden lg:block' />
@@ -169,7 +165,7 @@ const Section6 = () => {
             </div>
             
         </div>
-        <div className="container mx-auto max-w-[1140px] max-lg:px-3">
+        <div className="container mx-auto max-w-[1140px] max-xl:px-3">
             <div className=" sm:py-[78px] sm:pr-[40px]  sm:pl-[50px] py-[40px] pr-[20px] pl-[25px] bg-gradient-to-t from-[#072125] to-[#072125] border-[0.5px] border-[#828F93] rounded-[16px]">
             <div className="flex flex-wrap -mx-3 items-center relative z-10 ">
             <img src={Trip7E} alt="Trip7E" className=' absolute right-[-5%] top-[-27%] z-0  hidden lg:block ' />

@@ -1,5 +1,6 @@
 import React from "react";
 import ACCDelllip from '../assets/img/ACCDellip.webp'
+import S6E4 from '../assets/img/S6-ellipse4.webp'
 import {
   Accordion,
   AccordionHeader,
@@ -51,6 +52,8 @@ const Accord = () => {
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
   return (
  <section className=" bg-[#00141B] relative">
+            <img src={S6E4} alt="section6-ellip" className='absolute right-0 top-[-6 0%]' />
+
   <img src={ACCDelllip} alt="accd-ellip" className=" absolute top-[-60%] z-0 animate-pulse hidden lg:block " />
      <div className="xl:max-w-[970px] mx-auto xl:px-3 container px-6">
         <h2

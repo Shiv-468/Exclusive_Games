@@ -1,9 +1,12 @@
 import React from 'react'
 import Casino from '../assets/img/Casino-night.webp'
 import { Btngreen } from '../common/Icons'
+import S6E1 from '../assets/img/S6-ellipse-1.webp'
+
 const Section5 = () => {
   return (
-    <section className=' bg-2 bg-[#00141B] bg-[100%] bg-size '>
+    <section className=' bg-2 bg-[#00141B] bg-[100%] bg-size relative '>
+        <img src={S6E1} alt="s6-ellipse-1" className='absolute bottom-[-44%] left-0 z-10 hidden xl:block' />
         <div className="container mx-auto px-3 max-w-[1140px]">
             <div className=" flex flex-wrap -mx-3 pt-[100px] pb-[150px] lg:pt-[304px] lg:pb-[324px] items-center">
                 <div className=" w-full md:w-[50%] px-3 z-10">

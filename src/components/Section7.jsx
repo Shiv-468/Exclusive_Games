@@ -5,7 +5,7 @@ import Easin from '../assets/img/easin.webp'
 import { Btnwhite, Icons } from '../common/Icons'
 const Section7 = () => {
     return (
-        <section className='bg-[#00141B]'>
+        <section className='bg-[#00141B] relative'>
             <div className="container mx-auto px-3 max-w-[1140px]">
                 <h2 className='text-white text-[32px] md:text-[48px] leading-[57.6px] font-Anton font-[400] pb-[60px] text-center pt-[70px] md:pt-[150px]'>Ellos eligieron apostar con nosotros</h2>
                 <div className="flex flex-wrap -mx-3 justify-center">
